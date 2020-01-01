@@ -1,5 +1,5 @@
 {% set name = "flake8-nb" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set download_name = "flake8_nb" %}
 
 package:
