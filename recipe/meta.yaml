@@ -11,7 +11,7 @@ source:
   sha256: "8c9bf95440e63bf6665c002620d127892f0d4eee9bf275975252b938f62fd287"
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - flake8_nb = flake8_nb.__main__:main
@@ -24,7 +24,7 @@ requirements:
     - python >=3.6
     - pytest-runner
   run:
-    - flake8 >=3.0.0
+    - flake8 >=3.7.0,<3.8.0
     - ipython >=7.8.0
     - nbconvert >=5.6.0
     - python >=3.6
@@ -48,7 +48,7 @@ test:
 
 about:
   home: "https://github.com/s-weigand/flake8-nb"
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: "Flake8 based checking for jupyter notebooks"
