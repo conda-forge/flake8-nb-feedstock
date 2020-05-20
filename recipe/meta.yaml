@@ -48,7 +48,7 @@ test:
 
 about:
   home: "https://github.com/s-weigand/flake8-nb"
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: "Flake8 based checking for jupyter notebooks"
