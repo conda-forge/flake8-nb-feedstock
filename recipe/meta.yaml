@@ -11,7 +11,7 @@ source:
   sha256: "8c9bf95440e63bf6665c002620d127892f0d4eee9bf275975252b938f62fd287"
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - flake8_nb = flake8_nb.__main__:main
