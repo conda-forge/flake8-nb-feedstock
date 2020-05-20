@@ -1,22 +1,22 @@
 {% set name = "flake8-nb" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.6" %}
 {% set download_name = "flake8_nb" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz"
-  sha256: "8c9bf95440e63bf6665c002620d127892f0d4eee9bf275975252b938f62fd287"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
+  sha256: 2c8208607f390fdc5c16b6ec69f1365f5f5dfdca706fb820c7f3aa1b338c4352
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - flake8_nb = flake8_nb.__main__:main
     - flake8-nb = flake8_nb.__main__:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -47,13 +47,13 @@ test:
     - pytest >=3
 
 about:
-  home: "https://github.com/s-weigand/flake8-nb"
+  home: https://github.com/s-weigand/flake8-nb
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Flake8 based checking for jupyter notebooks"
-  doc_url: "https://flake8-nb.readthedocs.io"
-  dev_url: "https://github.com/s-weigand/flake8-nb"
+  summary: Flake8 based checking for jupyter notebooks
+  doc_url: https://flake8-nb.readthedocs.io
+  dev_url: https://github.com/s-weigand/flake8-nb
 
 extra:
   recipe-maintainers:
