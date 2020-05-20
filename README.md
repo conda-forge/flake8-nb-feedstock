@@ -3,7 +3,7 @@ About flake8-nb
 
 Home: https://github.com/s-weigand/flake8-nb
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
