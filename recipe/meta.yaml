@@ -1,5 +1,5 @@
 {% set name = "flake8-nb" %}
-{% set version = "0.1.8" %}
+{% set version = "0.2.0" %}
 {% set download_name = "flake8_nb" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
-  sha256: 0f566c71678885cebaa7923812dc98ceffee00203ffec5e65951e505eeade26d
+  sha256: ac39f556d18ad9ab67d0a96ca9b4db392190ea1f541983520fe5a917d4c74ec2
 
 build:
   number: 0
