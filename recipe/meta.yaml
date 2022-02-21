@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6.1
+    - python >=3.7
   run:
     - flake8 >=3.7.0,<4.0.2
     - ipython >=7.8.0
     - nbconvert >=5.6.0
-    - python >=3.6.1
+    - python >=3.7
     - setuptools
 
 
