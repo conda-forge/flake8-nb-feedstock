@@ -1,5 +1,5 @@
 {% set name = "flake8-nb" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 {% set download_name = "flake8_nb" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
-  sha256: 6497f645074ab6c5a3a32efc55875979790f614baeaba123381c9bc072e64ce8
+  sha256: 9e63e6d0ea2a24d788509acafa86548251e5d67d482c19f5d7e809ee63f0953c
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - flake8 >=3.7.0,<4.0.2
+    - flake8 >=3.8.0,<5.0.5
     - ipython >=7.8.0
     - nbconvert >=5.6.0
     - python >=3.7
