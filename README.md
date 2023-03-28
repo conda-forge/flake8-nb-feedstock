@@ -1,11 +1,11 @@
-About flake8-nb
-===============
+About flake8-nb-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flake8-nb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/s-weigand/flake8-nb
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flake8-nb-feedstock/blob/main/LICENSE.txt)
 
 Summary: Flake8 based checking for jupyter notebooks
 
