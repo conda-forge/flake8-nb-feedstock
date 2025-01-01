@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ download_name }}/{{ download_name }}-{{ version }}.tar.gz
   sha256: 00b447f4a4d649f85e35aad437d3df1477115dce081bc364f09d718cf928ca75
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - flake8_nb = flake8_nb.__main__:main
@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - flake8 >=3.8.0,<5.0.5
     - ipython >=7.8.0
     - nbconvert >=5.6.0
-    - python >=3.7
+    - python >={{ python_min }}
     - setuptools
 
 
@@ -43,6 +43,7 @@ test:
     - pytest tests
   requires:
     - pytest >=3
+    - python {{ python_min }}
 
 about:
   home: https://github.com/s-weigand/flake8-nb
